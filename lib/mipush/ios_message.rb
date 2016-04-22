@@ -1,6 +1,6 @@
 module Mipush
   class IosMessage < Message
-    attr_accessor :extra_sound_url, :badge
+    attr_accessor :extra_sound_url, :badge, :extra
 
     def initialize(options={})
       @description = options[:description]
@@ -8,6 +8,7 @@ module Mipush
       @time_to_send = options[:time_to_send]
       @extra_sound_url = options[:extra_sound_url]
       @badge = options[:badge]
+      @extra = options[:extra] || {}
     end
 
   end
