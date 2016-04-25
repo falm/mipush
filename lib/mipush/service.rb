@@ -41,7 +41,7 @@ module Mipush
     def self.send_message(endpoint, message, params = {})
       url = "#{endpoint}?#{message.to_params}"
       url = "#{url}&#{params.to_param}" if params
-      response = RestClient.post url, '', { authorization: "key=#{message.secret_key}" }.merge(message.extra)
+      response = RestClient.post url, message.extra, { authorization: "key=#{message.secret_key}" }
       puts response.body
       response.body
     end
