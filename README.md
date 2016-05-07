@@ -59,3 +59,4 @@ Mipush::Service.send_regid(reg_id, message)
 5. Create a new Pull Request
 all right reserved
 all right reserved
+all right reserved
