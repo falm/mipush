@@ -60,3 +60,4 @@ Mipush::Service.send_regid(reg_id, message)
 all right reserved
 all right reserved
 all right reserved
+all right reserved
